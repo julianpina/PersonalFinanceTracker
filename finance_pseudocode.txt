@@ -1,0 +1,32 @@
+Personal Finance Tracking Program Pseudocode:
+
+1. Make an extra module (finance_module.py).
+	-This file has only one function, displayAmount, which formats regular numbers to look like money format.
+
+2. Create the main program file and bring in the displayAmount from finance_module.py.
+
+3. Set up the Finance1 class to store basic money details:
+	-Budget, income, expenses, and savings.
+	-Also, add a function to figure out how much extra money is left after expenses and savings.
+
+4. Make another class, Finance2, which builds on Finance1:
+	-This class has a function that creates a financial summary.
+	-It makes sure all the numbers are neatly formatted using displayAmount.
+
+5. Write a function to get user input:
+	-Ask the user for their budget, income, expenses, and savings.
+	-If they enter something weird (like text instead of a number), show an error.
+
+6. Once the user enters their info:
+	-Create a Finance2 object with those values.
+	-Use it to generate a summary of their finances.
+
+7. Save the summary to a text file (finance_tracker.txt):
+	-Open the file and write everything down
+	-Close the file when done
+
+8. Make a simple user interface with Tkinter:
+	-Add text boxes for budget, income, expenses, and savings.
+	-Include a button called “Save and View Summary” to run the input function.
+
+9. Run the UI and let the user try it out.
